@@ -1,0 +1,91 @@
+
+aside{
+  position: absolute;
+  top: 100px;
+  right: 10px;
+  width: 400px;
+  height: 300px;
+}
+
+footer{
+  position: absolute;
+  top: 500px;
+  left: 10;
+  width: 100%;
+  height: 30px;
+  
+}
+
+header{
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+main{
+    position: absolute;
+    top: 220px;
+    left: 10;
+    width: 600px;
+    height: 400px;
+}
+
+nav{
+  position: absolute;
+  top: 100px;
+  left: 10;
+  width: 200px;
+  height: 100px;
+}
+
+.azure{
+    background-color:#b7ebe8;   
+}
+.border{
+  border:1px solid black;
+}
+
+
+ /*animacja */
+
+.animated-text {
+    animation-name: ShowAnimation;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+@keyframes ShowAnimation{
+    0% {
+    color:#da2020;
+    }
+    20% {
+        color:#c21a52;
+    }
+    40% {
+    color:#8a17d6;
+    }
+    60% {
+        color:#4016cc;
+    }
+    80% {
+        color:#1689cc;
+    }
+    100% {
+        color:#16bdcc;
+    }
+}
+
+
+@media screen and (min-width: 768px){
+    .text-color{
+        color: rgb(25, 12, 206);
+    }
+    }
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+    .text-color{
+        color: rgb(223, 10, 21);
+}
+}
