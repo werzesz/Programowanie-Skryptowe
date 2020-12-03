@@ -25,6 +25,7 @@ function split(text){
 
 //SAME CYFRY
 function numbers(text, checkBoxValue) {
+    
     var str = "";
     var splitArray = split(text);
     var array = [];
@@ -60,7 +61,7 @@ function numbers(text, checkBoxValue) {
 
 //SAME LITERY
 function letters(text, checkBoxValue) {
-
+    var str = "";
     var splitArray = split(text);
        
 
@@ -83,9 +84,10 @@ function letters(text, checkBoxValue) {
     for (var j = 0; j < localStorage.length; j++) {
         var key = localStorage.key(j);
         var value = localStorage.getItem(key);
+        str = `${str} ${key} ${value}`;
         console.log(key + " " + value);
     }
-
+return str;
 }
 
 

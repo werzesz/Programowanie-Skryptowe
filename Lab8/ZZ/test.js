@@ -17,14 +17,14 @@ describe('funkcja numbers(), checkbox ', function () {
 describe('funkcja letters() ', function () {
     it('Dla tekstu: "aa(NEWLINE)aa(NEWLINE)bb(NEWLINE)bb(NEWLINE)a(NEWLINE)b"', function () {
         var text = "aa\naa\nbb\nbb\na\nb\n";
-        assert.equal(numbers(text, false), " b 6 bb 3, 4 aa 1, 2 a 5");
+        assert.equal(letters(text, false), " b 1 bb 2 aa 2 a 1");
     });
 
 });
 describe('funkcja letters(), checkbox  ', function () {
     it('Dla tekstu: "aa(NEWLINE)aa(NEWLINE)bb(NEWLINE)bb(NEWLINE)a(NEWLINE)b"', function () {
         var text = "aa\naa\nbb\nbb\na\nb\n";
-        assert.equal(numbers(text, true), " b 6, 12 bb 3, 4, 9, 10 aa 1, 2, 7, 8 a 5, 11");
+        assert.equal(letters(text, true), " b 2 bb 4 aa 4 a 2");
     });
 
 });
